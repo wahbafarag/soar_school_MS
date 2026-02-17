@@ -10,6 +10,7 @@ yarn-error.log*
 /node_modules
 .env
 /readme
+.vscode
 
 # Runtime data
 pids

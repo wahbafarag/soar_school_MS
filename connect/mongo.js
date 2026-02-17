@@ -3,7 +3,7 @@ mongoose.Promise = global.Promise;
 
 module.exports = async ({ uri }) => {
   //database connection
-  await mongoose.connect(uri);
+  mongoose.connect(uri);
 
   // When successfully connected
   mongoose.connection.on("connected", function () {
