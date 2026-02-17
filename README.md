@@ -17,6 +17,12 @@ School Management System Implemented for Soar, Followed the existing project tem
 - If the DB is empty , you will be able to create a super admin for the first time via "/user/createSuperAdmin" without any tokens , after that tokens required , to get that login with the super admin credentials and use the returned token for other requests
 - head to /api-docs for the swagger documentation and testing the endpoints
 
+### Schema Design assumptions:
+
+- Classroom will have a reference to the school it belongs to, not the opposite "MongoDB array size issue"
+- Student will have a reference to the classroom they belong to, not the opposite "MongoDB array size issue"
+- Super admin can manage all schools and their resources, while school administrators can only manage their assigned school's resources
+
 #### Prerequisites
 
 - Node.js
